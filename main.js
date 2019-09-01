@@ -34,7 +34,7 @@ myContainer.style.marginRight = 'auto';
 var squareDivs = document.querySelectorAll('div');
   for (let j = 1; j <= Math.pow(num, 2); j++) {
     squareDivs[j].addEventListener('mouseover', () => squareDivs[j].style.backgroundColor = getRandomRgb());
-    squareDivs[j].addEventListener('mouseleave', () => squareDivs[j].style.backgroundColor = '#eee');
+    // squareDivs[j].addEventListener('mouseleave', () => squareDivs[j].style.backgroundColor = '#eee'); /* Activate this Event if you want reassign the Div's color to it's original case "No Color" */
   }  
   
 };
