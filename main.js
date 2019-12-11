@@ -52,12 +52,8 @@ function getRandomRgb() {
 // Prompt Message & Removing Existing Divs Function 
 
 function divsNumber(num) {
-  var myDivs = document.querySelectorAll('div');
-  for (let k=1; k<= myDivs.length-1; k++) {
-    myContainer.removeChild(myDivs[k]);
-    
-  }
   var promptMessage = prompt('Please Insert the divs number', 16);
+  myContainer.innerHTML = '';
   createDivs(promptMessage);
 };
 
