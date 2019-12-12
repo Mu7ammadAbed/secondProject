@@ -54,7 +54,7 @@ function getRandomRgb() {
 function divsNumber(num) {
   var promptMessage = prompt('Please Insert the divs number', 16);
   myContainer.innerHTML = '';
-  createDivs(promptMessage);
+  createDivs(promptMessage || 16);
 };
 
 myButton.addEventListener('click', divsNumber);
